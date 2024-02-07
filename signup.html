@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up - Kerala Tourism</title>
+    <style>
+        body {
+            background-image: url("Images/login.jpeg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .card {
+            width: 300px;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-title {
+            color: rgb(183, 113, 22);
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] { /* Modified to include email field */
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button, /* Changed to style for links */
+        .link-button {
+            background-color: rgb(183, 113, 22);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            text-decoration: none; /* Added to remove underline from links */
+        }
+
+        button:hover,
+        .link-button:hover {
+            background-color: #875c12;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h2 class="card-title mb-4">Sign Up for Kerala Tourism</h2>
+            <form action="login.html" method="post"> <!-- Changed action to login.html -->
+                <div class="form-group">
+                    <input type="text" name="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email"> <!-- Added email field -->
+                </div>
+                <a href="login.html" class="link-button">Sign Up</a> <!-- Changed to link -->
+            </form>
+            <p>Already have an account? <a href="login.html" class="link-button">Login</a></p> <!-- Changed to link -->
+        </div>
+    </div>
+</body>
+
+</html>
